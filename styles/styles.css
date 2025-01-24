@@ -84,7 +84,7 @@ section img {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: hand icon;
   background-color: #1e40af;
   color: white;
   font-weight: bold;
@@ -108,8 +108,8 @@ section img {
 
 .course-item {
   padding: 1rem;
-  background-color: #6b7280;
-  color: white;
+  background-color: #5de7d0;
+  color: rgb(92, 125, 218);
   text-align: center;
   border-radius: 5px;
   flex: 1 1 calc(30% - 1rem);
