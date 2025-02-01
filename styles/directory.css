@@ -1,0 +1,134 @@
+/* styles.css */
+
+/* Basic Styles for Mobile First */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 4px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.features {
+    padding: 20px;
+    text-align: center;
+}
+
+.feature {
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for Larger Screens (Desktop) */
+@media (min-width: 768px) {
+    /* Header Styling */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .feature {
+        width: 45%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        display: none; /* Initially hide the menu */
+    }
+
+    nav ul.show {
+        display: flex; /* Show the menu when "show" class is added */
+        flex-direction: column;
+        align-items: center;
+    }
+}
