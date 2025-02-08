@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf7f7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5b8fb9;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: rgb(252, 249, 249);
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    background: url('hero-image.jpg') no-repeat center/cover;
+    color: white;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background: #ff9800;
+    border: none;
+    color: rgb(250, 246, 246);
+    cursor: pointer;
+}
+
+.info {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20;
+    padding: 30px;
+    color: #5b8fb9;
+    
+}
+
+
+.business-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.business-card {
+    background: #b5d3eb;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20;
+    padding: 10px;
+    background: #5b8fb9;
+    color: white;
+}
