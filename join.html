@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber - Timbuktu Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <h1>Join the Timbuktu Chamber of Commerce</h1>
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required autocomplete="given-name">
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required autocomplete="family-name">
+                
+                <label for="title">Organizational Title:</label>
+                <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" title="Must be at least 7 letters" autocomplete="organization-title">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                
+                <label for="business-name">Business/Organization Name:</label>
+                <input type="text" id="business-name" name="business-name" required autocomplete="organization">
+                
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership">
+                    <option value="np">Non-Profit Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                
+                <label for="description">Business Description:</label>
+                <textarea id="description" name="description" rows="4"></textarea>
+                
+                <input type="hidden" id="timestamp" name="timestamp">
+                
+                <button type="submit">Apply Now</button>
+            </form>
+        </section>
+        
+        <section class="membership-cards">
+            <div class="card" id="np-card">Non-Profit Membership <button onclick="openModal('np-modal')">Learn More</button></div>
+            <div class="card" id="bronze-card">Bronze Membership <button onclick="openModal('bronze-modal')">Learn More</button></div>
+            <div class="card" id="silver-card">Silver Membership <button onclick="openModal('silver-modal')">Learn More</button></div>
+            <div class="card" id="gold-card">Gold Membership <button onclick="openModal('gold-modal')">Learn More</button></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    
+    <script src="scripts/join.js"></script>
+</body>
+</html>
